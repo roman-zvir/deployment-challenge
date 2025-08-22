@@ -65,8 +65,8 @@ jobs:
     needs: [test-production, test-staging]
     runs-on: ubuntu-latest
     steps:
-    name: write workflow summary
-    run: |
-    echo "###Deployment summary" >>$GITHUB_STEP_SUMMARY
-    echo "### Staging completed ✅" >>$GITHUB_STEP_SUMMARY
-    echo "###  Production completed ✅" >>$GITHUB_STEP_SUMMARY
+      - name: write workflow summary
+        run: |
+          echo "###Deployment summary" >>$GITHUB_STEP_SUMMARY
+          echo "### Staging completed ✅" >>$GITHUB_STEP_SUMMARY
+          echo "###  Production completed ✅" >>$GITHUB_STEP_SUMMARY
