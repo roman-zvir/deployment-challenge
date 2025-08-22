@@ -33,6 +33,8 @@ jobs:
         
   staging:
     runs-on: ubuntu-latest
+    environment:
+      name: staging
     steps:
       - run: |
           echo "After development envirionment is deployed..."
