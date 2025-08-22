@@ -69,7 +69,7 @@ jobs:
       - run: echo "# All tests and deployments have completed successfully!"
 
   summary:
-    needs: [test-production, test-staging]
+    needs: [test-production, test-staging, test-artifact]
     runs-on: ubuntu-latest
     steps:
       - name: write workflow summary
