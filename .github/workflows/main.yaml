@@ -28,6 +28,8 @@ jobs:
 
   development:
     runs-on: ubuntu-latest
+    environment:
+      name: development
     steps:
       - run: echo "- Auto-deploy the artifact to the development environment"
         
